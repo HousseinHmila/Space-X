@@ -1,0 +1,429 @@
+* {
+  padding: 0%;
+  /* padding-right: 0.3%; */
+  margin: 0%;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+#home {
+  background-image: url(./starter-code/assets/home/background-home-desktop.jpg);
+  background-size: cover;
+  background-position: center;
+  /* min-width: 100vh; */
+  height: 100vh;
+  z-index: -5555;
+  display: block;
+  margin-top: -7.5%;
+  /* position: relative; */
+}
+.rep {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+}
+.rep nav {
+  height: 65%;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 46%;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(3rem);
+}
+.rep ul {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 15%;
+}
+.rep li {
+  list-style: none;
+}
+.rep a {
+  text-decoration: none;
+  color: white;
+  font-weight: 1000;
+  font-size: 1.5rem;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 0.2rem;
+}
+.rep a:hover,
+a:focus {
+  /* opacity: 0.7; */
+  text-decoration: underline;
+  text-underline-offset: 2.7rem;
+  text-decoration-thickness: 4px;
+  color: white;
+}
+
+.rep #logo {
+  margin-left: 4rem;
+}
+#gauche {
+  position: absolute;
+  width: 30%;
+  height: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 18%;
+  margin-left: 12%;
+}
+#gauche h1 {
+  font-family: "Bellefair", sans-serif;
+  font-size: 150px;
+  font-weight: 100;
+  /* font-size: 9rem; */
+  color: white;
+  padding: 2rem 2rem 2rem 0rem;
+}
+#gauche h2 {
+  font-size: 3rem;
+  color: white;
+  font-family: "Barlow Condensed", sans-serif;
+}
+#gauche p {
+  font-size: 2.5rem;
+  color: white;
+  font-family: "Barlow Condensed", sans-serif;
+}
+#droite {
+  background-color: white;
+  border-radius: 50%;
+  width: 27rem;
+  height: 27rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 70%;
+  margin-top: 22%;
+}
+#droite:hover {
+  cursor: pointer;
+  animation: spin 0.4s;
+}
+#droite h2 {
+  font-size: 4rem;
+  font-family: "Bellefair", serif;
+  color: black;
+  font-weight: 400;
+}
+
+hr {
+  /* z-index: 555; */
+  border: 0;
+  margin-left: 5%;
+  margin-top: 3.75%;
+  position: absolute;
+  width: 45%;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    rgba(252, 249, 249, 0.75),
+    transparent
+  );
+}
+
+#crew {
+  background-image: url(./starter-code/assets/crew/background-crew-desktop.jpg);
+  background-size: cover;
+  background-position: center;
+  /* min-width: 100vh; */
+  min-height: 100vh;
+  z-index: -5555;
+  display: none;
+  margin-top: -11.9rem;
+}
+#tech {
+  background-image: url(./starter-code/assets/technology/background-technology-desktop.jpg);
+  background-size: cover;
+  background-position: center;
+  /* min-width: 100vh; */
+  min-height: 100vh;
+  z-index: -5555;
+  display: none;
+  margin-top: -11.9rem;
+}
+#dest {
+  background-image: url(./starter-code/assets/destination/background-destination-desktop.jpg);
+  background-size: cover;
+  background-position: center;
+  /* min-width: 100vh; */
+  min-height: 100vh;
+  z-index: -5555;
+  display: none;
+  margin-top: -11.9rem;
+}
+#dest h1 {
+  color: white;
+  font-size: 4rem;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 2px;
+  margin-left: 17rem;
+  margin-top: 10rem;
+}
+#ra9 {
+  position: absolute;
+  color: gray;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 4.2rem;
+  margin-left: 12rem;
+  margin-top: -5rem;
+  letter-spacing: 2px;
+}
+#dest ul {
+  width: 30%;
+  height: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 62%;
+  margin-top: 4rem;
+  margin-bottom: -2rem;
+}
+#dest a:hover,
+#dest a:focus {
+  /* opacity: 0.7; */
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-thickness: 4px;
+  color: white;
+}
+li {
+  list-style: none;
+}
+#dest a {
+  font-family: "Barlow Condensed", sans-serif;
+  text-decoration: none;
+  letter-spacing: 2.5px;
+  font-size: 2.5rem;
+  color: white;
+}
+.src,
+.src1,
+.src2,
+.src3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.rdg {
+  width: 25%;
+  margin-top: -5rem;
+}
+.rdg h2 {
+  text-align: left;
+  margin-left: -0.5rem;
+  font-size: 13rem;
+  margin-top: 2rem;
+  font-family: "Barlow Condensed", sans-serif;
+  color: white;
+}
+.src img,
+.src1 img,
+.src2 img,
+.src3 img {
+  margin-top: 2rem;
+  /* margin-right: 2rem; */
+  /* transform: rotateX(90deg) translateZ(0px); */
+
+  /* transform: rotate(50deg); */
+  animation: spin infinite 250s;
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.src h3,
+.src1 h3,
+.src2 h3,
+.src3 h3,
+.cr7 h3 {
+  font-size: 1.8rem;
+  color: white;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.avg {
+  padding-top: 2rem;
+  margin-top: 4rem;
+  border-top: 1px solid rgb(103, 100, 100);
+  display: flex;
+  justify-content: flex-start;
+}
+.g {
+  padding-right: 4rem;
+}
+.g h2,
+.d h2 {
+  padding-top: 1rem;
+  color: white;
+  font-size: 3rem;
+}
+.cr,
+.cr1,
+.cr2,
+.cr3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.cr3,
+.cr1,
+.cr2 {
+  display: none;
+}
+.cr img,
+.cr1 img,
+.cr2 img,
+.cr3 img {
+  height: 72vh;
+  position: absolute;
+  /* margin-bottom: -15%; */
+  bottom: 0%;
+  right: 8%;
+}
+.cr7,
+.messi {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 30%;
+  height: 40vh;
+  position: absolute;
+  left: 10%;
+  top: 38%;
+}
+.cr7 h3 {
+  font-size: 4rem;
+  color: rgba(255, 255, 255, 0.29);
+  font-family: "Barlow Condensed", sans-serif;
+}
+.cr7 h2,
+.messi h2 {
+  color: white;
+  font-size: 6rem;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  font-family: "Barlow Condensed", sans-serif;
+}
+.cr7 h4,
+.messi h4 {
+  color: rgba(255, 255, 255, 0.717);
+  font-size: 2.5rem;
+  font-family: "Barlow Condensed", sans-serif;
+}
+#crew h1,
+#tech h1 {
+  position: absolute;
+  color: white;
+
+  font-size: 4rem;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 2px;
+  top: 18%;
+  left: 10%;
+  width: 30%;
+}
+#crew span,
+#tech span {
+  color: rgba(255, 255, 255, 0.29);
+  margin-right: 2rem;
+}
+#msn {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  width: 12rem;
+  display: flex;
+  justify-content: space-between;
+}
+#msn input {
+  width: 1.3em;
+  height: 1.3em;
+  background-color: rgba(255, 255, 255, 0.29);
+  border-radius: 50%;
+  vertical-align: middle;
+  /* border: 1px solid #ddd; */
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+#msn input:hover,
+#msn input:focus {
+  background-color: white;
+}
+.mes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.mes img,
+.mes1 img,
+.mes2 img {
+  position: absolute;
+  right: 0%;
+  top: 30%;
+  height: 60%;
+}
+.messi {
+  left: 20%;
+}
+.messi h3 {
+  color: white;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+#para {
+  position: absolute;
+  top: 39%;
+  left: 10%;
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#para button {
+  /* padding-top: 0.8rem; */
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  font-family: "Barlow Condensed", sans-serif;
+  text-align: center;
+  font-size: 4rem;
+  border-radius: 50%;
+  width: 7rem;
+  height: 7rem;
+}
+#para button:hover,
+#para button:focus {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+#para .btn1 {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+.mes2,
+.mes1 {
+  display: none;
+}
